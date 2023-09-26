@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge 2</title>
+</head>
+
+<body style="background-color: black;">
+<style>
+     div {display: flex;}
+    .nomecognome {justify-content: center; color: white;}
+    .date {justify-content: center; color: white;}
+    .number {justify-content: center; color: white;}
+    .email {justify-content: center; color: white;}
+    .preferenza {justify-content: center;}
+    .checkboxes {justify-content: center; color: white;}
+    .range {justify-content: center; color: white;}
+    .condizioni {justify-content:center; color: white;}
+    .inviaereset {justify-content:space-around; color: white;}
+ </style>
+
+
+
+<h1 style="text-align: center; color: white">I miei gusti musicali </h1>
+<br><br><br>
+
+    <form onsubmit="alert ('Registrazione inviata!')">
+        <div class="nomecognome">
+            <input type="nome" placeholder= "Nome"/>&nbsp;
+            <input type="cognome" placeholder="Cognome"/>
+        </div><br>
+
+        <div class="date">
+            data di nascita &nbsp; <input type="date"/>
+        </div><br>
+
+        <div class="number">
+            numero di telefono &nbsp; <input type="number" placeholder="+39"/>
+        </div><br>
+
+        <div class="email">
+            indirizzo email &nbsp; <input type="email"/>&nbsp;
+            password &nbsp; <input type="password"/>
+        </div><br><br><br>
+        
+        <div class="preferenza">
+            <h3 style="color: white">Genere musicale preferito?</h3><br>
+        </div>
+
+        <div class="checkboxes">
+            Hip-hop<input type="checkbox" value="1">
+            Reggae<input type="checkbox" value="2">
+            Classica<input type="checkbox" value="3">
+            Rock<input type="checkbox" value="4">
+        </div><br><br>
+
+        <div class="range">
+            Quanto tempo ascolti musica al giorno?&nbsp;<input type="range" min="1" max="100" value="10">
+        </div><br><br>
+        
+        <div class="condizioni">
+           <input type="radio"> Accetto i termini e le condizioni generali
+        </div><br><br>
+        
+        <div class="inviaereset">
+            <button type="reset"> RESET </button>
+            <button type="submit">INVIA REGISTRAZIONE</button>
+        </div>
+    </form>
+</body>
+</html>
